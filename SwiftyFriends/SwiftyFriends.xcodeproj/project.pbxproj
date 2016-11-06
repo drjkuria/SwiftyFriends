@@ -12,6 +12,8 @@
 		1DDFD13A1DCFC58500829E1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DDFD1391DCFC58500829E1D /* Assets.xcassets */; };
 		1DDFD13D1DCFC58500829E1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DDFD13B1DCFC58500829E1D /* LaunchScreen.storyboard */; };
 		1DDFD1451DCFC5F100829E1D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDFD1441DCFC5F100829E1D /* LoginViewController.swift */; };
+		1DDFD1AC1DCFD68200829E1D /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DDFD19B1DCFD4CC00829E1D /* Alamofire.framework */; };
+		1DDFD1AD1DCFD68900829E1D /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DDFD1821DCFD4BF00829E1D /* SwiftyJSON.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +115,20 @@
 			remoteGlobalIDString = E4202FE01B667AA100C997FB;
 			remoteInfo = "Alamofire watchOS";
 		};
+		1DDFD1A81DCFD67100829E1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1DDFD18F1DCFD4CC00829E1D /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		1DDFD1AA1DCFD67900829E1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1DDFD1771DCFD4BF00829E1D /* SwiftyJSON.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E4FEFDA19575BE100351305;
+			remoteInfo = "SwiftyJSON iOS";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -132,6 +148,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DDFD1AD1DCFD68900829E1D /* SwiftyJSON.framework in Frameworks */,
+				1DDFD1AC1DCFD68200829E1D /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,6 +229,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				1DDFD1AB1DCFD67900829E1D /* PBXTargetDependency */,
+				1DDFD1A91DCFD67100829E1D /* PBXTargetDependency */,
 			);
 			name = SwiftyFriends;
 			productName = SwiftyFriends;
@@ -386,6 +406,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1DDFD1A91DCFD67100829E1D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire iOS";
+			targetProxy = 1DDFD1A81DCFD67100829E1D /* PBXContainerItemProxy */;
+		};
+		1DDFD1AB1DCFD67900829E1D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SwiftyJSON iOS";
+			targetProxy = 1DDFD1AA1DCFD67900829E1D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		1DDFD1361DCFC58500829E1D /* Main.storyboard */ = {
