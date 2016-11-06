@@ -42,6 +42,9 @@
                                 <state key="normal" title="Login Button">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="signIn:" destination="iBl-2q-Nrs" eventType="touchUpInside" id="cUd-g7-bdY"/>
+                                </connections>
                             </button>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="LQk-vq-Rmw">
                                 <frame key="frameInset" minX="275" minY="330" width="20" height="20"/>
