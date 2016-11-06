@@ -43,7 +43,10 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="LQk-vq-Rmw"/>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="LQk-vq-Rmw">
+                                <frame key="frameInset" minX="275" minY="330" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -53,8 +56,6 @@
                             <constraint firstItem="FL5-EI-UKs" firstAttribute="leading" secondItem="xKi-FE-Uar" secondAttribute="leading" id="NHN-lZ-xTJ"/>
                             <constraint firstItem="FL5-EI-UKs" firstAttribute="trailing" secondItem="xKi-FE-Uar" secondAttribute="trailing" id="P0M-Y3-QKp"/>
                             <constraint firstItem="Us1-le-T4Z" firstAttribute="leading" secondItem="U4p-6J-ryF" secondAttribute="leadingMargin" id="RSa-bP-mmo"/>
-                            <constraint firstItem="LQk-vq-Rmw" firstAttribute="centerY" secondItem="xKi-FE-Uar" secondAttribute="centerY" id="SkY-yg-sTw"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="LQk-vq-Rmw" secondAttribute="trailing" constant="64" id="Stj-J1-tkd"/>
                             <constraint firstItem="5oe-Qn-ugP" firstAttribute="top" secondItem="Us1-le-T4Z" secondAttribute="bottom" constant="579" id="UVA-gl-Dd8"/>
                             <constraint firstItem="Us1-le-T4Z" firstAttribute="top" secondItem="ZDi-Et-4dn" secondAttribute="bottom" constant="28" id="ZJy-H9-s7D"/>
                             <constraint firstItem="5oe-Qn-ugP" firstAttribute="top" secondItem="xKi-FE-Uar" secondAttribute="bottom" constant="302" id="dmo-aH-mcX"/>
@@ -64,6 +65,12 @@
                             <constraint firstItem="xKi-FE-Uar" firstAttribute="top" secondItem="FL5-EI-UKs" secondAttribute="bottom" constant="40" id="ybB-CD-1eS"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="loginActivityIndicator" destination="LQk-vq-Rmw" id="8XY-B6-fLb"/>
+                        <outlet property="loginButton" destination="xKi-FE-Uar" id="3Gi-c1-FSf"/>
+                        <outlet property="passwordTextField" destination="FL5-EI-UKs" id="3WA-aU-Sqw"/>
+                        <outlet property="usernameTextField" destination="2aK-lF-6li" id="3Lm-k6-Jzk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8os-XZ-ELZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
