@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D909C791DCFE4F5004BA424 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D909C781DCFE4F5004BA424 /* Friend.swift */; };
 		1DDFD1331DCFC58500829E1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDFD1321DCFC58500829E1D /* AppDelegate.swift */; };
 		1DDFD1381DCFC58500829E1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DDFD1361DCFC58500829E1D /* Main.storyboard */; };
 		1DDFD13A1DCFC58500829E1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DDFD1391DCFC58500829E1D /* Assets.xcassets */; };
@@ -133,6 +134,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D909C781DCFE4F5004BA424 /* Friend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 		1DDFD12F1DCFC58500829E1D /* SwiftyFriends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftyFriends.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DDFD1321DCFC58500829E1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1DDFD1371DCFC58500829E1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 				1DDFD1321DCFC58500829E1D /* AppDelegate.swift */,
 				1DDFD1441DCFC5F100829E1D /* LoginViewController.swift */,
 				1DDFD1AE1DCFDB8000829E1D /* FriendsTableViewController.swift */,
+				1D909C781DCFE4F5004BA424 /* Friend.swift */,
 				1DDFD1361DCFC58500829E1D /* Main.storyboard */,
 				1DDFD1391DCFC58500829E1D /* Assets.xcassets */,
 				1DDFD13B1DCFC58500829E1D /* LaunchScreen.storyboard */,
@@ -406,6 +409,7 @@
 				1DDFD1451DCFC5F100829E1D /* LoginViewController.swift in Sources */,
 				1DDFD1331DCFC58500829E1D /* AppDelegate.swift in Sources */,
 				1DDFD1AF1DCFDB8000829E1D /* FriendsTableViewController.swift in Sources */,
+				1D909C791DCFE4F5004BA424 /* Friend.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
