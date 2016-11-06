@@ -77,11 +77,12 @@
                         <outlet property="loginButton" destination="xKi-FE-Uar" id="3Gi-c1-FSf"/>
                         <outlet property="passwordTextField" destination="FL5-EI-UKs" id="3WA-aU-Sqw"/>
                         <outlet property="usernameTextField" destination="2aK-lF-6li" id="3Lm-k6-Jzk"/>
+                        <segue destination="lFY-lO-Pni" kind="show" identifier="LoginSegue" id="uer-IV-JLZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8os-XZ-ELZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1068" y="7.6461769115442282"/>
+            <point key="canvasLocation" x="1018" y="-348"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="bwB-TW-eap">
@@ -100,6 +101,34 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1bk-bx-xdA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="128.80000000000001" y="7.6461769115442282"/>
+        </scene>
+        <!--Friends Table View Controller-->
+        <scene sceneID="o85-Yp-50h">
+            <objects>
+                <tableViewController id="lFY-lO-Pni" customClass="FriendsTableViewController" customModule="SwiftyFriends" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="ZQ3-dn-0Na">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="HfW-m0-Q9K">
+                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HfW-m0-Q9K" id="Ejn-Pt-VJ4">
+                                    <frame key="frameInset" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="lFY-lO-Pni" id="KST-8v-17v"/>
+                            <outlet property="delegate" destination="lFY-lO-Pni" id="dja-ub-7fL"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xli-Dq-Z7D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1017" y="464"/>
         </scene>
     </scenes>
 </document>

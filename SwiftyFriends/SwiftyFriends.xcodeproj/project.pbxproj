@@ -14,6 +14,7 @@
 		1DDFD1451DCFC5F100829E1D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDFD1441DCFC5F100829E1D /* LoginViewController.swift */; };
 		1DDFD1AC1DCFD68200829E1D /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DDFD19B1DCFD4CC00829E1D /* Alamofire.framework */; };
 		1DDFD1AD1DCFD68900829E1D /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DDFD1821DCFD4BF00829E1D /* SwiftyJSON.framework */; };
+		1DDFD1AF1DCFDB8000829E1D /* FriendsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDFD1AE1DCFDB8000829E1D /* FriendsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -141,6 +142,7 @@
 		1DDFD1441DCFC5F100829E1D /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		1DDFD1771DCFD4BF00829E1D /* SwiftyJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyJSON.xcodeproj; path = ../../SwiftyJSON/SwiftyJSON.xcodeproj; sourceTree = "<group>"; };
 		1DDFD18F1DCFD4CC00829E1D /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = ../../Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
+		1DDFD1AE1DCFDB8000829E1D /* FriendsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +179,7 @@
 			children = (
 				1DDFD1321DCFC58500829E1D /* AppDelegate.swift */,
 				1DDFD1441DCFC5F100829E1D /* LoginViewController.swift */,
+				1DDFD1AE1DCFDB8000829E1D /* FriendsTableViewController.swift */,
 				1DDFD1361DCFC58500829E1D /* Main.storyboard */,
 				1DDFD1391DCFC58500829E1D /* Assets.xcassets */,
 				1DDFD13B1DCFC58500829E1D /* LaunchScreen.storyboard */,
@@ -402,6 +405,7 @@
 			files = (
 				1DDFD1451DCFC5F100829E1D /* LoginViewController.swift in Sources */,
 				1DDFD1331DCFC58500829E1D /* AppDelegate.swift in Sources */,
+				1DDFD1AF1DCFDB8000829E1D /* FriendsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -574,6 +578,7 @@
 				1DDFD1431DCFC58500829E1D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
