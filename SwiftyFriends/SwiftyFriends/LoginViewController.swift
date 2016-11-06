@@ -37,7 +37,5 @@ class LoginViewController: UIViewController {
         return .lightContent
     }
     
-    
-    
 
 }
