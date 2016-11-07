@@ -84,6 +84,76 @@
             </objects>
             <point key="canvasLocation" x="1018" y="-348"/>
         </scene>
+        <!--Friend Details View Controller-->
+        <scene sceneID="Qak-Zh-lRY">
+            <objects>
+                <viewController id="D6z-F9-iy8" customClass="FriendDetailsViewController" customModule="SwiftyFriends" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="V9W-tX-lB8"/>
+                        <viewControllerLayoutGuide type="bottom" id="NkE-WL-iIt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5vR-U8-p9O">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Friend" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sGt-qA-IWu">
+                                <fontDescription key="fontDescription" name="DamascusBold" family="Damascus" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="alias" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B4D-0i-hni">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="7g9-H7-DA1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Damascus" family="Damascus" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="date of birth" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DDz-l5-h6U">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="mgQ-RU-LYc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Damascus" family="Damascus" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="status" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wn1-8S-fIn">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ekB-Jl-MsA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Damascus" family="Damascus" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="B4D-0i-hni" firstAttribute="trailing" secondItem="DDz-l5-h6U" secondAttribute="trailing" id="1uv-0O-qkQ"/>
+                            <constraint firstItem="NkE-WL-iIt" firstAttribute="top" secondItem="Wn1-8S-fIn" secondAttribute="bottom" constant="351" id="A0N-qJ-RHa"/>
+                            <constraint firstItem="sGt-qA-IWu" firstAttribute="top" secondItem="V9W-tX-lB8" secondAttribute="bottom" constant="54" id="G6H-EV-tDr"/>
+                            <constraint firstItem="B4D-0i-hni" firstAttribute="top" secondItem="sGt-qA-IWu" secondAttribute="bottom" constant="47" id="I0O-bb-dbt"/>
+                            <constraint firstItem="sGt-qA-IWu" firstAttribute="leading" secondItem="5vR-U8-p9O" secondAttribute="leadingMargin" id="IeN-OS-8X5"/>
+                            <constraint firstItem="DDz-l5-h6U" firstAttribute="leading" secondItem="Wn1-8S-fIn" secondAttribute="leading" id="Q8B-SL-wmb"/>
+                            <constraint firstItem="Wn1-8S-fIn" firstAttribute="top" secondItem="DDz-l5-h6U" secondAttribute="bottom" constant="8" symbolic="YES" id="Vmy-zk-P6K"/>
+                            <constraint firstItem="B4D-0i-hni" firstAttribute="leading" secondItem="DDz-l5-h6U" secondAttribute="leading" id="bDU-nv-kKQ"/>
+                            <constraint firstItem="sGt-qA-IWu" firstAttribute="leading" secondItem="B4D-0i-hni" secondAttribute="leading" id="lDI-Zv-WkD"/>
+                            <constraint firstItem="sGt-qA-IWu" firstAttribute="trailing" secondItem="5vR-U8-p9O" secondAttribute="trailingMargin" id="sqy-9d-blx"/>
+                            <constraint firstItem="DDz-l5-h6U" firstAttribute="top" secondItem="B4D-0i-hni" secondAttribute="bottom" constant="8" symbolic="YES" id="v7Z-Dc-Q6i"/>
+                            <constraint firstItem="DDz-l5-h6U" firstAttribute="trailing" secondItem="Wn1-8S-fIn" secondAttribute="trailing" id="x9d-OH-Xq3"/>
+                            <constraint firstItem="sGt-qA-IWu" firstAttribute="trailing" secondItem="B4D-0i-hni" secondAttribute="trailing" id="yIf-eB-g6l"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="aliasLabel" destination="B4D-0i-hni" id="JpX-dB-qcW"/>
+                        <outlet property="dateOfBirthLabel" destination="DDz-l5-h6U" id="XSQ-kr-Gip"/>
+                        <outlet property="fullNameLabel" destination="sGt-qA-IWu" id="06y-5c-xnJ"/>
+                        <outlet property="statusLabel" destination="Wn1-8S-fIn" id="Rah-si-brs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D6y-sk-FbB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1852" y="-128.18590704647679"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="bwB-TW-eap">
             <objects>
@@ -151,6 +221,7 @@
                                         <connections>
                                             <outlet property="aliasLabel" destination="i5I-di-idP" id="u2z-vv-52P"/>
                                             <outlet property="lastSeenLabel" destination="EbZ-pf-aRR" id="qP2-2g-RSF"/>
+                                            <segue destination="D6z-F9-iy8" kind="show" identifier="ShowDetails" id="MgL-8Q-5ug"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

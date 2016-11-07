@@ -10,6 +10,7 @@
 		1D909C791DCFE4F5004BA424 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D909C781DCFE4F5004BA424 /* Friend.swift */; };
 		1D909C7B1DCFE9A8004BA424 /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D909C7A1DCFE9A8004BA424 /* FriendTableViewCell.swift */; };
 		1D909C7D1DCFF85F004BA424 /* FriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D909C7C1DCFF85F004BA424 /* FriendViewController.swift */; };
+		1D909C811DD00145004BA424 /* FriendDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D909C801DD00145004BA424 /* FriendDetailsViewController.swift */; };
 		1DDFD1331DCFC58500829E1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDFD1321DCFC58500829E1D /* AppDelegate.swift */; };
 		1DDFD1381DCFC58500829E1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DDFD1361DCFC58500829E1D /* Main.storyboard */; };
 		1DDFD13A1DCFC58500829E1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DDFD1391DCFC58500829E1D /* Assets.xcassets */; };
@@ -138,6 +139,7 @@
 		1D909C781DCFE4F5004BA424 /* Friend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 		1D909C7A1DCFE9A8004BA424 /* FriendTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
 		1D909C7C1DCFF85F004BA424 /* FriendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendViewController.swift; sourceTree = "<group>"; };
+		1D909C801DD00145004BA424 /* FriendDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendDetailsViewController.swift; sourceTree = "<group>"; };
 		1DDFD12F1DCFC58500829E1D /* SwiftyFriends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftyFriends.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DDFD1321DCFC58500829E1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1DDFD1371DCFC58500829E1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 				1D909C7C1DCFF85F004BA424 /* FriendViewController.swift */,
 				1D909C781DCFE4F5004BA424 /* Friend.swift */,
 				1D909C7A1DCFE9A8004BA424 /* FriendTableViewCell.swift */,
+				1D909C801DD00145004BA424 /* FriendDetailsViewController.swift */,
 				1DDFD1361DCFC58500829E1D /* Main.storyboard */,
 				1DDFD1391DCFC58500829E1D /* Assets.xcassets */,
 				1DDFD13B1DCFC58500829E1D /* LaunchScreen.storyboard */,
@@ -412,6 +415,7 @@
 				1D909C7D1DCFF85F004BA424 /* FriendViewController.swift in Sources */,
 				1DDFD1451DCFC5F100829E1D /* LoginViewController.swift in Sources */,
 				1DDFD1331DCFC58500829E1D /* AppDelegate.swift in Sources */,
+				1D909C811DD00145004BA424 /* FriendDetailsViewController.swift in Sources */,
 				1D909C7B1DCFE9A8004BA424 /* FriendTableViewCell.swift in Sources */,
 				1D909C791DCFE4F5004BA424 /* Friend.swift in Sources */,
 			);

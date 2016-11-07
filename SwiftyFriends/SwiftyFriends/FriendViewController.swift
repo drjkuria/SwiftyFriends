@@ -96,4 +96,20 @@ class FriendViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         return cell
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ShowDetails" {
+            let destinationVC = segue.destination as! FriendDetailsViewController
+            
+            guard let cell = sender as? UITableViewCell,
+                let indexPath = tableView.indexPath(for: cell) else {
+                    return
+            }
+            destinationVC.fullName = self.friends[indexPath.row].firstName! +
+                " " + self.friends[indexPath.row].lastName!
+            destinationVC.alias = self.friends[indexPath.row].alias!
+            destinationVC.dateOfBirth = self.friends[indexPath.row].dateOfBirth!
+            destinationVC.status = self.friends[indexPath.row].status!
+        }
+    }
 }
