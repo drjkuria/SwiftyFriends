@@ -97,7 +97,7 @@ class LoginViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "LoginSegue" {
 //            let nav = segue.destination as! UINavigationController
-            let destinationVC = segue.destination as! FriendsTableViewController
+            let destinationVC = segue.destination as! FriendViewController
             
             destinationVC.firstName = firstName
             destinationVC.uniqueID = guid

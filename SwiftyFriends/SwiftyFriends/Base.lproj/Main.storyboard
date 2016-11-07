@@ -77,7 +77,7 @@
                         <outlet property="loginButton" destination="xKi-FE-Uar" id="3Gi-c1-FSf"/>
                         <outlet property="passwordTextField" destination="FL5-EI-UKs" id="3WA-aU-Sqw"/>
                         <outlet property="usernameTextField" destination="2aK-lF-6li" id="3Lm-k6-Jzk"/>
-                        <segue destination="lFY-lO-Pni" kind="show" identifier="LoginSegue" id="uer-IV-JLZ"/>
+                        <segue destination="QWf-Ba-PuW" kind="show" identifier="LoginSegue" id="nhc-vF-OWa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8os-XZ-ELZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -102,33 +102,75 @@
             </objects>
             <point key="canvasLocation" x="128.80000000000001" y="7.6461769115442282"/>
         </scene>
-        <!--Friends Table View Controller-->
-        <scene sceneID="o85-Yp-50h">
+        <!--Friend View Controller-->
+        <scene sceneID="XLr-Cl-EdB">
             <objects>
-                <tableViewController id="lFY-lO-Pni" customClass="FriendsTableViewController" customModule="SwiftyFriends" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="ZQ3-dn-0Na">
+                <viewController id="QWf-Ba-PuW" customClass="FriendViewController" customModule="SwiftyFriends" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tQo-LZ-9yo"/>
+                        <viewControllerLayoutGuide type="bottom" id="UUb-yS-vGv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1Wo-Vp-QLc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JDO-Ft-bp6">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="FriendCell" rowHeight="100" id="ZM3-8Y-DLL" customClass="FriendTableViewCell" customModule="SwiftyFriends" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="92" width="375" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZM3-8Y-DLL" id="pCW-sG-Kd1">
+                                            <frame key="frameInset" width="342" height="99"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LastSeen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EbZ-pf-aRR">
+                                                    <fontDescription key="fontDescription" name="Damascus" family="Damascus" pointSize="10"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alias" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i5I-di-idP">
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="195" id="O01-yH-Wpo"/>
+                                                        <constraint firstAttribute="height" constant="21" id="srG-cw-mnD"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="DamascusSemiBold" family="Damascus" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="i5I-di-idP" firstAttribute="trailing" secondItem="EbZ-pf-aRR" secondAttribute="trailing" id="4QV-o8-NDh"/>
+                                                <constraint firstItem="i5I-di-idP" firstAttribute="leading" secondItem="EbZ-pf-aRR" secondAttribute="leading" id="9IK-og-t8H"/>
+                                                <constraint firstItem="EbZ-pf-aRR" firstAttribute="top" secondItem="i5I-di-idP" secondAttribute="bottom" constant="15" id="Lna-8U-Hl6"/>
+                                                <constraint firstItem="i5I-di-idP" firstAttribute="trailing" secondItem="pCW-sG-Kd1" secondAttribute="trailingMargin" id="XEK-aD-vSa"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="EbZ-pf-aRR" secondAttribute="bottom" constant="14" id="sFw-rN-IUe"/>
+                                                <constraint firstItem="i5I-di-idP" firstAttribute="top" secondItem="pCW-sG-Kd1" secondAttribute="topMargin" constant="12" id="wjc-bO-4Tv"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="aliasLabel" destination="i5I-di-idP" id="u2z-vv-52P"/>
+                                            <outlet property="lastSeenLabel" destination="EbZ-pf-aRR" id="qP2-2g-RSF"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FriendCell" rowHeight="80" id="HfW-m0-Q9K">
-                                <rect key="frame" x="0.0" y="92" width="375" height="80"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HfW-m0-Q9K" id="Ejn-Pt-VJ4">
-                                    <frame key="frameInset" width="375" height="79.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="lFY-lO-Pni" id="KST-8v-17v"/>
-                            <outlet property="delegate" destination="lFY-lO-Pni" id="dja-ub-7fL"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xli-Dq-Z7D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <constraints>
+                            <constraint firstItem="JDO-Ft-bp6" firstAttribute="centerY" secondItem="1Wo-Vp-QLc" secondAttribute="centerY" id="JfC-De-xOE"/>
+                            <constraint firstItem="JDO-Ft-bp6" firstAttribute="top" secondItem="1Wo-Vp-QLc" secondAttribute="top" id="Ybi-Rm-mcx"/>
+                            <constraint firstAttribute="trailing" secondItem="JDO-Ft-bp6" secondAttribute="trailing" id="ir6-b3-GWa"/>
+                            <constraint firstItem="JDO-Ft-bp6" firstAttribute="leading" secondItem="1Wo-Vp-QLc" secondAttribute="leading" id="t6C-Zz-sD0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="JDO-Ft-bp6" id="WTR-B9-Tdh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dDL-l8-ZdS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1017" y="464"/>
+            <point key="canvasLocation" x="1016.8" y="384.55772113943033"/>
         </scene>
     </scenes>
 </document>
