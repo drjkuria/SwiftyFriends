@@ -6,4 +6,11 @@ Demonstrates various aspects of iOS developement using swift such as
 * Basic UI Animations
 * Network calls using Alamofire
 * JSON 
+* Basic UI Animation
 * ...
+
+## Requirements
+* XCode 8.1 Beta
+* Alamofire 4.0
+* SwiftyJSON 
+* Swift 3
